@@ -1,359 +1,878 @@
 <!DOCTYPE html>
 <!-- saved from url=(0030)https://motqnendecor.odoo.com/ -->
-<html lang="ar-001" data-website-id="1" data-main-object="website.page(5,)" data-country="EG" data-logged="false"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="Odoo">
-        <meta name="description" content="This is the homepage of the website">
-            
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="متقنين ديكور | motqnendecor">
-        <meta property="og:site_name" content="motqnendecor">
-        <meta property="og:url" content="https://motqnendecor.odoo.com/">
-        <meta property="og:image" content="https://motqnendecor.odoo.com/web/image/website/1/logo?unique=3c00e3d">
-        <meta property="og:description" content="This is the homepage of the website">
-            
-        <meta name="twitter:card" content="summary_large_image">
-        
-        <link rel="canonical" href="https://mohamedtarek.odoo.com/">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-        <title>متقنين ديكور | motqnendecor</title>
-        <link type="image/x-icon" rel="shortcut icon" href="https://motqnendecor.odoo.com/web/image/website/1/favicon?unique=3c00e3d">
-        <link rel="preload" href="https://motqnendecor.odoo.com/web/assets/1/08a7674/web.fontawesome.min.woff2" as="font" crossorigin="">
-        <link rel="preload" href="https://motqnendecor.odoo.com/web/assets/1/bbcc623/web.odoo_ui_icons.min.woff2" as="font" crossorigin="">
-        <link type="text/css" rel="stylesheet" href="./متقنين ديكور _ motqnendecor_files/web.assets_frontend.rtl.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <script id="web.layout.odooscript" type="text/javascript">
-            var odoo = {
-                csrf_token: 'af3d8d309fd2a0d36b075ba856b167347625d643o1802603987',
-                debug: "",
-            };
-        </script>
-        <script type="text/javascript">
-            odoo.__session_info__ = {"is_admin": false, "is_system": false, "is_public": true, "is_internal_user": false, "is_website_user": true, "uid": null, "registry_hash": "960a39a760eb0e12bae4791962e4fcd4878a685262b9108fd279f6f8e0d84c5f", "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "currencies": {"75": {"name": "EGP", "symbol": "LE", "position": "after", "digits": [69, 2]}}, "quick_login": true, "bundle_params": {"lang": "ar_001", "website_id": 1}, "server_version": "saas~19.1+e", "server_version_info": ["saas~19", 1, 0, "final", 0, "e"], "test_mode": false, "websocket_worker_version": "19.0-2", "translationURL": "/website/translations", "geoip_country_code": "EG", "geoip_phone_code": 20, "lang_url_code": "ar"};
-            if (!/(^|;\s)tz=/.test(document.cookie)) {
-                const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
-                document.cookie = `tz=${userTZ}; path=/`;
+<html lang="ar-001" data-website-id="1" data-main-object="website.page(5,)" data-country="EG" data-logged="false">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Odoo">
+    <meta name="description" content="This is the homepage of the website">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="متقنين ديكور | motqnendecor">
+    <meta property="og:site_name" content="motqnendecor">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:image" content="https://motqnendecor.odoo.com/web/image/website/1/logo?unique=3c00e3d">
+    <meta property="og:description" content="This is the homepage of the website">
+
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="./index.html">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <title>متقنين ديكور | motqnendecor</title>
+    <link type="image/x-icon" rel="shortcut icon" href="./متقنين ديكور _ motqnendecor_files/motqnendecor.webp">
+    <link type="text/css" rel="stylesheet" href="./متقنين ديكور _ motqnendecor_files/web.assets_frontend.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .custom-social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: white !important;
+            border-radius: 50% !important;
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .custom-social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            color: #000;
+        }
+
+        .custom-social-icon i {
+            font-size: 20px;
+        }
+
+        #map-iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .map-section {
+            width: 100%;
+            padding: 50px 0;
+            background-color: #1d1f25;
+        }
+
+        .map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .map-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .cta-card {
+            width: 100%;
+            min-height: 400px;
+            border-radius: 25px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./متقنين ديكور _ motqnendecor_files/shop_category_3_4x3.webp');
+            background-color: #857a6e;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            margin: 40px auto;
+            color: white;
+            text-align: center;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-content h2 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.25rem;
+            background-color: #ffffff;
+            color: black;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* إصلاح المسافة تحت الهيدر في الموبايل */
+        @media (max-width: 991.98px) {
+            main {
+                padding-top: 50px !important;
+                /* قيمة تقريبية لارتفاع هيدر الموبايل */
             }
-        </script>
-        <script type="text/javascript" defer="defer" src="./متقنين ديكور _ motqnendecor_files/web.assets_frontend_minimal.min.js.download" onerror="__odooAssetError=1"></script>
-        <script type="text/javascript" onerror="__odooAssetError=1" defer="defer" src="./متقنين ديكور _ motqnendecor_files/web.assets_frontend_lazy.min.js.download"></script>
-        
-        
-    <style id="conditional_visibility"></style></head>
-    <body class="o_id_583 o_website_url_home" is-ready="true">
-        
+
+            .header_custome {
+                padding-top: 50px !important;
+            }
+        }
+    </style>
+    <script id="web.layout.odooscript" type="text/javascript">
+        var odoo = {
+            csrf_token: 'af3d8d309fd2a0d36b075ba856b167347625d643o1802603987',
+            debug: "",
+        };
+    </script>
+    <script type="text/javascript">
+        odoo.__session_info__ = { "is_admin": false, "is_system": false, "is_public": true, "is_internal_user": false, "is_website_user": true, "uid": null, "registry_hash": "960a39a760eb0e12bae4791962e4fcd4878a685262b9108fd279f6f8e0d84c5f", "is_frontend": true, "profile_session": null, "profile_collectors": null, "profile_params": null, "show_effect": true, "currencies": { "75": { "name": "EGP", "symbol": "LE", "position": "after", "digits": [69, 2] } }, "quick_login": true, "bundle_params": { "lang": "ar_001", "website_id": 1 }, "server_version": "saas~19.1+e", "server_version_info": ["saas~19", 1, 0, "final", 0, "e"], "test_mode": false, "websocket_worker_version": "19.0-2", "translationURL": "/website/translations", "geoip_country_code": "EG", "geoip_phone_code": 20, "lang_url_code": "ar" };
+        if (!/(^|;\s)tz=/.test(document.cookie)) {
+            const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            document.cookie = `tz=${userTZ}; path=/`;
+        }
+    </script>
+    <script type="text/javascript" defer="defer"
+        src="./متقنين ديكور _ motqnendecor_files/web.assets_frontend_minimal.min.js.download"
+        onerror="__odooAssetError=1"></script>
+    <script type="text/javascript" onerror="__odooAssetError=1" defer="defer"
+        src="./متقنين ديكور _ motqnendecor_files/web.assets_frontend_lazy.min.js.download"></script>
+
+
+    <style id="conditional_visibility"></style>
+</head>
+
+<body class="o_id_583 o_website_url_home" is-ready="true">
 
 
 
 
 
-        <div id="wrapwrap" class="homepage o_rtl  ">
-            <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0" href="https://motqnendecor.odoo.com/#wrap">تخطي للذهاب إلى المحتوى</a>
-                <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="زر العناصر الإضافية" class="o_header_standard o_header_affixed o_top_fixed_element o_header_is_scrolled" style="transform: translate(0px, 0px);">
-    <nav data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block shadow-sm ">
-        
 
-            <div id="o_main_nav" class="o_main_nav container">
-                
-    <a data-name="Navbar Logo" href="https://motqnendecor.odoo.com/" class="navbar-brand logo me-4">
-            
-            <span role="img" aria-label="Logo of motqnendecor" title="motqnendecor"><img src="./متقنين ديكور _ motqnendecor_files/motqnendecor.webp" class="img img-fluid" width="95" height="40" alt="motqnendecor" loading="lazy" style=""></span>
-        </a>
-    
-                
-    <ul role="menu" id="top_menu" class="nav navbar-nav top_menu me-auto">
-        
-                    
-                
-    </ul>
-                
-                <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 justify-content-end ps-3">
-                    
-                    
-        <li class="">
-                <div data-name="Text" class="s_text_block ">
-                    <a href="tel:+966 50 173 7672%E2%81%A9" class="nav-link o_nav-link_secondary p-2" target="_blank">
-                        <span class="o_force_ltr"><small>+966 50 173 7672⁩</small></span>
-                    <br></a>
-                </div>
-        </li>
-                    
-        <li class="">
-            <div class="o_header_social_links ">
-                <div class="s_social_media o_not_editable oe_unmovable oe_unremovable" data-snippet="s_social_media" data-name="Social Media">
-                    <h5 class="s_social_media_title d-none">تابعنا</h5>
-<a href="https://motqnendecor.odoo.com/website/social/facebook" class="s_social_media_facebook o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="فيسبوك">
-                        <i class="fa fa-facebook fa-stack p-1 o_editable_media"></i>
+    <div id="wrapwrap" class="homepage o_rtl  ">
+        <a class="o_skip_to_content btn btn-primary rounded-0 visually-hidden-focusable position-absolute start-0"
+            href="#wrap">تخطي للذهاب إلى المحتوى</a>
+        <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="زر العناصر الإضافية"
+            class="o_header_standard o_header_affixed o_top_fixed_element o_header_is_scrolled"
+            style="transform: translate(0px, 0px);">
+            <nav data-name="Navbar" aria-label="Main"
+                class="navbar navbar-expand-lg navbar-light o_colored_level o_cc d-none d-lg-block shadow-sm ">
+
+
+                <div id="o_main_nav" class="o_main_nav container">
+
+                    <a data-name="Navbar Logo" href="./index.html" class="navbar-brand logo me-4">
+
+                        <span role="img" aria-label="Logo of motqnendecor" title="motqnendecor"><img
+                                src="./متقنين ديكور _ motqnendecor_files/motqnendecor.webp" class="img img-fluid"
+                                width="95" height="40" alt="motqnendecor" loading="lazy" style=""></span>
                     </a>
-<a href="https://www.snapchat.com/" class="o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="snapchat">
-                        <i class="fa p-1 o_editable_media fa-stack fa-snapchat"></i>
-                    </a>
-<a href="https://motqnendecor.odoo.com/website/social/instagram" class="s_social_media_instagram o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="Instagram">
-                        <i class="fa fa-instagram fa-stack p-1 o_editable_media"></i>
-                    </a>
-</div>
-            </div>
-        </li>
-                    
-                    
-            <li class=" o_no_autohide_item">
-                <a href="https://motqnendecor.odoo.com/web/login" class="o_nav_link_btn nav-link border px-3">تسجيل الدخول</a>
-            </li>
-                    
-                    
-        <li class="">
-            <div class="oe_structure oe_structure_solo ">
-                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
-                    <div class="container">
-                        <a class="oe_unremovable btn-lg btn btn-primary" href="https://motqnendecor.odoo.com/#">واتساب</a>
-                    </div>
-                </section>
-            </div>
-        </li>
-                </ul>
-            </div>
-        
-    </nav>
 
-    <nav data-name="Navbar" aria-label="Mobile" class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
-        
 
-        <div class="o_main_nav container flex-wrap justify-content-between">
-            <div class="d-flex flex-grow-1">
-                
-    <a data-name="Navbar Logo" href="https://motqnendecor.odoo.com/" class="navbar-brand logo ">
-            
-            <span role="img" aria-label="Logo of motqnendecor" title="motqnendecor"><img src="./متقنين ديكور _ motqnendecor_files/motqnendecor.webp" class="img img-fluid" width="95" height="40" alt="motqnendecor" loading="lazy" style=""></span>
-        </a>
-    
-                <ul class="o_header_mobile_buttons_wrap navbar-nav d-flex flex-row align-items-center gap-2 mb-0 ms-auto"></ul>
-            </div>
-            <button class="nav-link btn p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="تنقل التبديل">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
-                <div class="offcanvas-header justify-content-end o_not_editable">
-                    <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas" aria-label="إغلاق"></button>
-                </div>
-                <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100 pt-0">
-                    <ul class="navbar-nav">
-                        
-                        
-                        <li>
-    <ul role="menu" class="nav navbar-nav top_menu  o_mega_menu_is_offcanvas mx-n3  ">
-        
-                                
-                            
-    </ul>
+                    <ul role="menu" id="top_menu" class="nav navbar-nav top_menu me-auto">
+
+
+
+                    </ul>
+
+                    <ul class="navbar-nav align-items-center gap-2 flex-shrink-0 justify-content-end ps-3">
+
+
+                        <li class="">
+                            <div data-name="Text" class="s_text_block ">
+                                <a href="tel:+966 50 173 7672%E2%81%A9" class="nav-link o_nav-link_secondary p-2"
+                                    target="_blank">
+                                    <span class="o_force_ltr"><small>+966 50 173 7672⁩</small></span>
+                                    <br></a>
+                            </div>
                         </li>
-                        
-        <li class="">
-                <div data-name="Text" class="s_text_block mt-2">
-                    <a href="tel:+966 50 173 7672%E2%81%A9" class="nav-link o_nav-link_secondary p-2" target="_blank">
-                        <span class="o_force_ltr"><small>+966 50 173 7672⁩</small></span>
-                    <br></a>
-                </div>
-        </li>
-                        
-        <li class="">
-            <div class="o_header_social_links mt-2">
-                <div class="s_social_media o_not_editable oe_unmovable oe_unremovable" data-snippet="s_social_media" data-name="Social Media">
-                    <h5 class="s_social_media_title d-none">تابعنا</h5>
-<a href="https://motqnendecor.odoo.com/website/social/facebook" class="s_social_media_facebook o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="فيسبوك">
-                        <i class="fa fa-facebook fa-stack p-1 o_editable_media"></i>
-                    </a>
-<a href="https://www.snapchat.com/" class="o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="snapchat">
-                        <i class="fa p-1 o_editable_media fa-stack fa-snapchat"></i>
-                    </a>
-<a href="https://motqnendecor.odoo.com/website/social/instagram" class="s_social_media_instagram o_nav-link_secondary nav-link m-0 p-0 text-decoration-none" target="_blank" aria-label="Instagram">
-                        <i class="fa fa-instagram fa-stack p-1 o_editable_media"></i>
-                    </a>
-</div>
-            </div>
-        </li>
-                    </ul>
-                    <ul class="navbar-nav gap-2 mt-3 w-100">
-                        
-                        
-            <li class=" o_no_autohide_item">
-                <a href="https://motqnendecor.odoo.com/web/login" class="nav-link o_nav_link_btn w-100 border text-center">تسجيل الدخول</a>
-            </li>
-                        
-                        
-        <li class="">
-            <div class="oe_structure oe_structure_solo ">
-                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level" data-snippet="s_text_block" data-name="Text">
-                    <div class="container">
-                        <a class="oe_unremovable btn-lg btn btn-primary w-100" href="https://motqnendecor.odoo.com/#">واتساب</a>
-                    </div>
-                </section>
-            </div>
-        </li>
+
+                        <li class="">
+                            <div class="o_header_social_links ">
+                                <div class="s_social_media o_not_editable oe_unmovable oe_unremovable"
+                                    data-snippet="s_social_media" data-name="Social Media">
+                                    <h5 class="s_social_media_title d-none">تابعنا</h5>
+                                    <a href="#"
+                                        class="s_social_media_facebook o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                        target="_blank" aria-label="فيسبوك">
+                                        <i class="fa fa-facebook fa-stack p-1 o_editable_media"></i>
+                                    </a>
+                                    <a href="https://www.snapchat.com/"
+                                        class="o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                        target="_blank" aria-label="snapchat">
+                                        <i class="fa p-1 o_editable_media fa-stack fa-snapchat"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="s_social_media_instagram o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                        target="_blank" aria-label="Instagram">
+                                        <i class="fa fa-instagram fa-stack p-1 o_editable_media"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class=" o_no_autohide_item">
+                            <a href="#" class="o_nav_link_btn nav-link border px-3">تسجيل الدخول</a>
+                        </li>
+
+
+                        <li class="">
+                            <div class="oe_structure oe_structure_solo ">
+                                <section class="oe_unremovable oe_unmovable s_text_block o_colored_level"
+                                    data-snippet="s_text_block" data-name="Text">
+                                    <div class="container">
+                                        <a class="oe_unremovable btn-lg btn btn-primary" href="https://wa.me//num">واتساب</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    
-    </nav>
-    </header>
-                <main class="" style="padding-top: 79.6px;">
-                    
-        <div id="wrap" class="oe_structure"><section class="header_custome s_striped_center_top o_cc o_cc5 o_colored_level pt32 pb0" data-oe-shape-data="{&#39;shape&#39;:&#39;html_builder/Connections/20&#39;,&#39;colors&#39;:{&#39;c5&#39;: &#39;o-color-4&#39;},&#39;flip&#39;:[], &#39;showOnMobile&#39;:true}" data-snippet="s_striped_center_top" data-name="القسم الأوسط العلوي مخطط بخطوط">
-        <div class="o_we_shape o_html_builder_Connections_20 o_shape_show_mobile" style="background-image: url(&quot;/html_editor/shape/html_builder/Connections/20.svg?c5=o-color-4&quot;); background-position: 50% 100%;"></div>
-        <div class="o_container_small">
-            <div class="row o_grid_mode" data-row-count="15">
-                <div class="o_colored_level o_grid_item g-col-lg-8 g-height-5 col-lg-8" style="grid-area: 1 / 3 / 6 / 11; z-index: 1;">
-                    <h1 style="text-align: center;"><span class="h2-fs">تحويل الرؤية إلى واقع ملموس</span></h1>
-                    <p class="lead" style="text-align: center;">نحن نحرص على تقديم حلول سلسة ومبتكرة تلبي احتياجاتك وتتجاوز توقعاتك، مما يؤدي إلى تحقيق نتائج مجدية ونجاح دائم.</p>
-                    <p style="text-align: center;">
-                        <a class="o_translate_inline btn-lg btn btn-primary" href="https://motqnendecor.odoo.com/contactus">تواصل معنا</a>
-                    </p>
-                </div>
-                
-            <div class="o_colored_level o_grid_item g-col-lg-10 g-height-10 col-lg-10" style="text-align: center; z-index: 2; grid-area: 6 / 2 / 16 / 12;">
-                    <figure class="figure w-100">
-                        <img src="./متقنين ديكور _ motqnendecor_files/ChatGPT Image 13 فبراير 2026، 02_15_42 م.webp" alt="" data-attachment-id="1074" class="figure-img img-fluid rounded img o_we_custom_image" style="width: 100% !important;" data-format-mimetype="image/webp" data-original-id="1074" data-original-src="/web/image/1074-e73b8a7d/ChatGPT%20Image%2013%20%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1%202026%D8%8C%2002_15_42%20%D9%85.png" data-mimetype-before-conversion="image/png" data-resize-width="690" data-mimetype="image/webp" loading="lazy"><br>
-                    </figure>
-                </div></div>
-        </div>
-    </section><section class="custom_title s_title o_colored_level pb0 pt72" data-vcss="001" data-snippet="s_title" data-name="العنوان">
-        <div class="container s_allow_columns">
-            <h2 class="display-3-fs" style="text-align: center;">بعض من اعمالنا</h2>
-        </div>
-    </section><section class="s_image_gallery o_slideshow pt24 pb24 s_image_gallery_controllers_outside s_image_gallery_controllers_outside_arrows_right s_image_gallery_indicators_dots s_image_gallery_arrows_default o_image_popup o_colored_level o_half_screen_height" data-vcss="002" data-columns="3" data-snippet="s_image_gallery" data-name="معرض الصور" style="height: 486.5px;">
-        <div class="overflow-hidden o_container_small"><div style="margin: 0 12px;" id="slideshow_1770417011750" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="1000"><div class="carousel-inner"><div class="carousel-item" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-06 at 7.57.20 PM.jpeg" alt="" data-attachment-id="1001" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="1001" data-original-src="/web/image/1001-1ed0ffc4/WhatsApp%20Image%202026-02-06%20at%207.57.20%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="0" style=""></div><div class="carousel-item undefined active" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.44.56 PM.jpeg" alt="" data-attachment-id="1000" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="1000" data-original-src="/web/image/1000-0273576b/WhatsApp%20Image%202026-02-03%20at%207.44.56%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="1" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/11.jpeg" alt="" data-attachment-id="999" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="999" data-original-src="/web/image/999-f706d270/11.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="2" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.53.40 PM.jpeg" alt="" data-attachment-id="998" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="998" data-original-src="/web/image/998-f4d7f19f/WhatsApp%20Image%202026-02-03%20at%207.53.40%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="3" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/11111.jpeg" alt="" data-attachment-id="997" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="997" data-original-src="/web/image/997-84c8c711/11111.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="4" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.01.20 PM.jpeg" alt="" data-attachment-id="996" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="996" data-original-src="/web/image/996-d494d264/WhatsApp%20Image%202026-02-03%20at%208.01.20%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="5" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/500000.jpeg" alt="" data-attachment-id="995" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="995" data-original-src="/web/image/995-30d3688f/500000.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="6" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.12 PM.jpeg" alt="" data-attachment-id="994" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="994" data-original-src="/web/image/994-65a3f1d1/WhatsApp%20Image%202026-02-03%20at%207.47.12%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="7" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.00.40 PM.jpeg" alt="" data-attachment-id="993" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="993" data-original-src="/web/image/993-8f885ddf/WhatsApp%20Image%202026-02-03%20at%208.00.40%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="8" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.20.58 PM.webp" alt="" data-attachment-id="983" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="983" data-original-src="/web/image/983-00034350/WhatsApp%20Image%202026-02-03%20at%208.20.58%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="870" data-mimetype="image/webp" data-index="9" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.11 PM.webp" alt="" data-attachment-id="984" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="984" data-original-src="/web/image/984-1cb16cb3/WhatsApp%20Image%202026-02-03%20at%207.47.11%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="10" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.42.53 1111.jpeg" alt="" data-attachment-id="985" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="985" data-original-src="/web/image/985-6b9ff10a/WhatsApp%20Image%202026-02-03%20at%207.42.53%201111.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="11" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/000000.webp" alt="" data-attachment-id="986" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="986" data-original-src="/web/image/986-01289459/000000.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="12" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.20 PM.jpeg" alt="" data-attachment-id="987" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="987" data-original-src="/web/image/987-cac75ff9/WhatsApp%20Image%202026-02-02%20at%208.10.20%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1080" data-mimetype="image/webp" data-index="13" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.40.51 PM.jpeg" alt="" data-attachment-id="988" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="988" data-original-src="/web/image/988-426c1bd9/WhatsApp%20Image%202026-02-03%20at%207.40.51%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="14" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.10 PM.webp" alt="" data-attachment-id="989" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="989" data-original-src="/web/image/989-2e27679e/WhatsApp%20Image%202026-02-03%20at%207.47.10%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="15" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/11111111.jpeg" alt="" data-attachment-id="990" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="990" data-original-src="/web/image/990-313d02e0/11111111.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="960" data-mimetype="image/webp" data-index="16" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.21 PM.jpeg" alt="" data-attachment-id="991" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="991" data-original-src="/web/image/991-f232f061/WhatsApp%20Image%202026-02-02%20at%208.10.21%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1080" data-mimetype="image/webp" data-index="17" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.17 PM.webp" alt="" data-attachment-id="992" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="992" data-original-src="/web/image/992-53baaee4/WhatsApp%20Image%202026-02-02%20at%208.10.17%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="18" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.42.53 PM.jpeg" alt="" data-attachment-id="982" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="982" data-original-src="/web/image/982-86d56f68/WhatsApp%20Image%202026-02-03%20at%207.42.53%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="19" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.40 PM.jpeg" alt="" data-attachment-id="981" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="981" data-original-src="/web/image/981-7acde13d/WhatsApp%20Image%202026-02-03%20at%208.14.40%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="20" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.39 PM.jpeg" alt="" data-attachment-id="980" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="980" data-original-src="/web/image/980-4275669c/WhatsApp%20Image%202026-02-03%20at%208.14.39%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="396" data-mimetype="image/webp" data-index="21" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.26 PM.jpeg" alt="" data-attachment-id="979" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="979" data-original-src="/web/image/979-2e5f30ce/WhatsApp%20Image%202026-02-02%20at%208.10.26%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="22" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.41 PM.jpeg" alt="" data-attachment-id="978" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="978" data-original-src="/web/image/978-1ed4cbed/WhatsApp%20Image%202026-02-03%20at%208.14.41%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="23" style=""></div><div class="carousel-item undefined" style="min-height: 382.5px;"><img src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.38 PM.jpeg" alt="" data-attachment-id="977" class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover" data-format-mimetype="image/webp" data-original-id="977" data-original-src="/web/image/977-ef62e55e/WhatsApp%20Image%202026-02-03%20at%208.14.38%20PM.jpeg" data-mimetype-before-conversion="image/jpeg" data-resize-width="720" data-mimetype="image/webp" data-index="24" style=""></div></div><div class="o_carousel_controllers"><button class="carousel-control-prev o_we_no_overlay o_not_editable" data-bs-slide="prev" aria-label="السابق" title="السابق" data-bs-target="#slideshow_1770417011750"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">السابق</span></button><div class="carousel-indicators s_image_gallery_indicators_bars"><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="0" class="" style="background-image: url(&quot;/web/image/1032-1ed0ffc4/WhatsApp%20Image%202026-02-06%20at%207.57.20%20PM.jpeg&quot;);"></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="1" style="background-image: url(&quot;/web/image/1025-0273576b/WhatsApp%20Image%202026-02-03%20at%207.44.56%20PM.jpeg&quot;);" class="active" aria-current="true"></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="2" style="background-image: url(&quot;/web/image/1024-f706d270/11.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="3" style="background-image: url(&quot;/web/image/1023-f4d7f19f/WhatsApp%20Image%202026-02-03%20at%207.53.40%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="4" style="background-image: url(&quot;/web/image/1022-84c8c711/11111.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="5" style="background-image: url(&quot;/web/image/1021-d494d264/WhatsApp%20Image%202026-02-03%20at%208.01.20%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="6" style="background-image: url(&quot;/web/image/1020-30d3688f/500000.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="7" style="background-image: url(&quot;/web/image/1019-65a3f1d1/WhatsApp%20Image%202026-02-03%20at%207.47.12%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="8" style="background-image: url(&quot;/web/image/1018-8f885ddf/WhatsApp%20Image%202026-02-03%20at%208.00.40%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="9" style="background-image: url(&quot;/web/image/1008-c69dc8d2/WhatsApp%20Image%202026-02-03%20at%208.20.58%20PM.webp&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="10" style="background-image: url(&quot;/web/image/1009-58593778/WhatsApp%20Image%202026-02-03%20at%207.47.11%20PM.webp&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="11" style="background-image: url(&quot;/web/image/1010-6b9ff10a/WhatsApp%20Image%202026-02-03%20at%207.42.53%201111.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="12" style="background-image: url(&quot;/web/image/1011-78eb35e7/000000.webp&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="13" style="background-image: url(&quot;/web/image/1012-cac75ff9/WhatsApp%20Image%202026-02-02%20at%208.10.20%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="14" style="background-image: url(&quot;/web/image/1013-426c1bd9/WhatsApp%20Image%202026-02-03%20at%207.40.51%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="15" style="background-image: url(&quot;/web/image/1015-fa548a9b/WhatsApp%20Image%202026-02-03%20at%207.47.10%20PM.webp&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="16" style="background-image: url(&quot;/web/image/1016-313d02e0/11111111.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="17" style="background-image: url(&quot;/web/image/1017-f232f061/WhatsApp%20Image%202026-02-02%20at%208.10.21%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="18" style="background-image: url(&quot;/web/image/1014-38af63af/WhatsApp%20Image%202026-02-02%20at%208.10.17%20PM.webp&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="19" style="background-image: url(&quot;/web/image/1007-86d56f68/WhatsApp%20Image%202026-02-03%20at%207.42.53%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="20" style="background-image: url(&quot;/web/image/1006-7acde13d/WhatsApp%20Image%202026-02-03%20at%208.14.40%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="21" style="background-image: url(&quot;/web/image/1005-4275669c/WhatsApp%20Image%202026-02-03%20at%208.14.39%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="22" style="background-image: url(&quot;/web/image/1004-2e5f30ce/WhatsApp%20Image%202026-02-02%20at%208.10.26%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="23" style="background-image: url(&quot;/web/image/1003-1ed4cbed/WhatsApp%20Image%202026-02-03%20at%208.14.41%20PM.jpeg&quot;);" class=""></button><button type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة" data-bs-target="#slideshow_1770417011750" data-bs-slide-to="24" style="background-image: url(&quot;/web/image/1002-ef62e55e/WhatsApp%20Image%202026-02-03%20at%208.14.38%20PM.jpeg&quot;);" class=""></button></div><button class="carousel-control-next o_we_no_overlay o_not_editable" data-bs-slide="next" aria-label="التالي" title="التالي" data-bs-target="#slideshow_1770417011750"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">التالي</span></button></div></div></div>
-    </section><section class="s_key_benefits pt48 o_colored_level pb0" data-oe-shape-data="{&#39;shape&#39;: &#39;html_builder/Connections/14&#39;}" data-snippet="s_key_benefits" data-name="المزايا الرئيسية">
-        <div class="o_we_shape o_html_builder_Connections_14" style=""></div>
-        <div class="container">
-            <p class="lead">
-                ✽&nbsp;ما نقدمه
-            </p>
-            <h2 class="display-3-fs">اكتشف المزايا الثلاث الرئيسية <br>التي نقدمها</h2>
-            <div class="row">
-                <div class="col-lg-4 pt48 pb24 o_colored_level">
-                    <span class="display-3-fs text-o-color-1">1</span>
-                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                        <hr class="w-100 mx-auto">
+
+            </nav>
+
+            <nav data-name="Navbar" aria-label="Mobile"
+                class="navbar  navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm ">
+
+
+                <div class="o_main_nav container flex-wrap justify-content-between">
+                    <div class="d-flex flex-grow-1">
+
+                        <a data-name="Navbar Logo" href="./index.html" class="navbar-brand logo ">
+
+                            <span role="img" aria-label="Logo of motqnendecor" title="motqnendecor"><img
+                                    src="./متقنين ديكور _ motqnendecor_files/motqnendecor.webp" class="img img-fluid"
+                                    width="95" height="40" alt="motqnendecor" loading="lazy"></span>
+                        </a>
+
+                        <ul
+                            class="o_header_mobile_buttons_wrap navbar-nav d-flex flex-row align-items-center gap-2 mb-0 ms-auto">
+                        </ul>
                     </div>
-                    <h3 class="h4-fs">أسعار مناسبة</h3>
-                    <p>نحن نقدم أسعاراً صريحة وشفافة توفر لك قيمة كبيرة، مما يضمن لك دائماً الحصول على أفضل صفقة دون تكاليف خفية.</p>
-                </div>
-                <div class="col-lg-4 pt48 pb24 o_colored_level">
-                    <span class="display-3-fs text-o-color-1">2</span>
-                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                        <hr class="w-100 mx-auto">
-                    </div>
-                    <h3 class="h4-fs">دعم على مدار الساعة</h3>
-                    <p>يتوفر فريق الدعم لدينا على مدار الساعة طوال أيام الأسبوع لمساعدتك في أي استفسارات أو مشكلات، مما يضمن حصولك على المساعدة متى احتجت إليها.</p>
-                </div>
-                <div class="col-lg-4 pt48 pb24 o_colored_level">
-                    <span class="display-3-fs text-o-color-1">3</span>
-                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
-                        <hr class="w-100 mx-auto">
-                    </div>
-                    <h3 class="h4-fs">سرعه التنفيذ</h3>
-                    <p>لدينا فريق على اعلى مستوى</p><p>&nbsp;مما يمكننا من اداء المهام بسرعه عاليه</p>
-                </div>
-            </div>
-        </div>
-    </section><section class="s_bento_banner pt32 pb32 o_colored_level" data-snippet="s_bento_banner" data-name="Bento Banner">
-        <div class="container">
-            <section data-name="Card" class="oe_unmovable oe_unremovable o_cc o_cc5 oe_img_bg o_bg_img_center s_col_no_resize d-flex rounded-4 py-5 py-lg-0 o_colored_level o_bg_img_origin_border_box" style="background-image: url(&#39;/web/image/website.shop_category_3_4x3&#39;); box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;" data-mimetype="image/webp">
-                <div class="o_we_bg_filter bg-black-25"></div>
-                <div class="container-fluid">
-                    <div class="oe_unremovable row mx-0 o_grid_mode" data-row-count="9">
-                        <div class="o_grid_item g-col-lg-8 o_colored_level g-height-7 col-lg-8" style="z-index: 1; grid-area: 3 / 3 / 10 / 11;">
-                            <h2 style="text-align: center;">تواصل معنا للاستفسار عن كل ماتحتاج اليه</h2><p><br></p>
-                            <p style="text-align: center;">
-                                <a role="button" class="o_translate_inline btn-lg btn btn-primary" href="https://motqnendecor.odoo.com/contactus">تواصل معنا</a></p>
+                    <button class="nav-link btn p-2 o_not_editable" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile"
+                        aria-expanded="false" aria-label="تنقل التبديل">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="top_menu_collapse_mobile" class="offcanvas offcanvas-end o_navbar_mobile">
+                        <div class="offcanvas-header justify-content-end o_not_editable">
+                            <button type="button" class="nav-link btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="إغلاق"></button>
                         </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section><section class="s_title o_cc o_cc5 o_colored_level pt24 pb0" data-vcss="001" data-scroll-background-ratio="0" data-snippet="s_title" id="%D9%83%D9%84-%D8%B4%D9%8A%D8%A1-%D9%8A%D8%AA%D8%B9%D9%84%D9%82-%D8%A8%D8%A7%D9%84%D9%84%D9%88%D9%86" data-anchor="true">
-        <div class="s_allow_columns container">
-            
-        <div class="row o_grid_mode" data-row-count="11"><div class="o_colored_level o_grid_item g-col-lg-12 g-height-11 col-lg-12" style="grid-area: 1 / 1 / 12 / 13; z-index: 2;"><h2 style="text-align: center;">
-        كل شيء يتعلق ب الالون والديكورات والجبس بورد</h2><p><br></p><section class="s_map rounded-3 o_not_editable pb224 pt192" data-vxml="001" data-snippet="s_map" data-map-address="شارع مواكب النصر جدة" data-name="الخريطة" data-map-type="m" data-map-zoom="12">
-        <div class="map_container">
-            <div class="css_non_editable_mode_hidden">
-                <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none">
-                    يجب تحديد العنوان حتى يتم تضمين الخريطة
-                </div>
-            </div>
-            <iframe class="s_map_embedded o_not_editable" src="./متقنين ديكور _ motqnendecor_files/maps.html" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" aria-label="الخريطة"></iframe>
-            <div class="s_map_color_filter"></div>
-        </div>
-    </section></div></div></div>
-    </section></div>
-    
-        <div id="o_shared_blocks" class="oe_unremovable"></div>
-                </main>
-                <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
-                    <div id="footer" class="oe_structure oe_structure_solo border text-break" style="--box-border-left-width: 0px; --box-border-right-width: 0px;">
-            <section class="s_text_block pt40 pb16" data-snippet="s_text_block" data-name="Container">
-                <div class="container">
-                    <div class="row o_grid_mode" data-row-count="5">
-                        <div class="o_colored_level o_grid_item g-col-lg-2 g-height-5 col-lg-2" style="grid-area: 1 / 1 / 6 / 3; z-index: 1;">
-                            <h5><span style="font-size: 24px;"><strong>روابط مفيدة</strong></span></h5>
-                            <ul class="list-unstyled">
-                                <li><span style="font-size: 20px;"><a href="https://motqnendecor.odoo.com/">الرئيسية</a></span></li><li style="font-size: 20px;"><a href="https://motqnendecor.odoo.com/contactus">تواصل معنا</a></li>
+                        <div class="offcanvas-body d-flex flex-column justify-content-between h-100 w-100 pt-0">
+                            <ul class="navbar-nav">
+
+
+                                <li>
+                                    <ul role="menu" class="nav navbar-nav top_menu  o_mega_menu_is_offcanvas mx-n3  ">
+
+
+
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <div data-name="Text" class="s_text_block mt-2">
+                                        <a href="tel:+966 50 173 7672%E2%81%A9"
+                                            class="nav-link o_nav-link_secondary p-2" target="_blank">
+                                            <span class="o_force_ltr"><small>+966 50 173 7672⁩</small></span>
+                                            <br></a>
+                                    </div>
+                                </li>
+
+                                <li class="">
+                                    <div class="o_header_social_links mt-2">
+                                        <div class="s_social_media o_not_editable oe_unmovable oe_unremovable"
+                                            data-snippet="s_social_media" data-name="Social Media">
+                                            <h5 class="s_social_media_title d-none">تابعنا</h5>
+                                            <a href="#"
+                                                class="s_social_media_facebook o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                                target="_blank" aria-label="فيسبوك">
+                                                <i class="fa fa-facebook fa-stack p-1 o_editable_media"></i>
+                                            </a>
+                                            <a href="https://www.snapchat.com/"
+                                                class="o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                                target="_blank" aria-label="snapchat">
+                                                <i class="fa p-1 o_editable_media fa-stack fa-snapchat"></i>
+                                            </a>
+                                            <a href="#"
+                                                class="s_social_media_instagram o_nav-link_secondary nav-link m-0 p-0 text-decoration-none"
+                                                target="_blank" aria-label="Instagram">
+                                                <i class="fa fa-instagram fa-stack p-1 o_editable_media"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav gap-2 mt-3 w-100">
+
+
+                                <li class=" o_no_autohide_item">
+                                    <a href="#" class="nav-link o_nav_link_btn w-100 border text-center">تسجيل
+                                        الدخول</a>
+                                </li>
+
+
+                                <li class="">
+                                    <div class="oe_structure oe_structure_solo ">
+                                        <section class="oe_unremovable oe_unmovable s_text_block o_colored_level"
+                                            data-snippet="s_text_block" data-name="Text">
+                                            <div class="container">
+                                                <a class="oe_unremovable btn-lg btn btn-primary w-100"
+                                                    href="#">واتساب</a>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
-                        <div class="o_colored_level o_grid_item g-col-lg-5 g-height-5 col-lg-5" style="grid-area: 1 / 3 / 6 / 8; z-index: 2;">
-                            <h5><span class="h4-fs"><strong>من نحن</strong></span></h5>
-                            <p><span style="font-size: 20px;">نحن فريق من الأفراد المتحمسين، نهدف إلى تحسين تجربة العملاء من خلال توفير دهانات عالية الجودة. نحن نقدم مجموعة متنوعة من الألوان والأنواع لتلبية احتياجات كل مشروع.&nbsp;</span><br><span style="font-size: 20px;">خدماتنا تناسب المنازل و&nbsp;المشاريع التجارية.</span></p>
-                        </div><div class="o_colored_level o_grid_item g-col-lg-4 col-lg-4 g-height-5" style="grid-area: 1 / 9 / 6 / 13; z-index: 3;">
-                            <h5><span class="h4-fs"><strong>تواصل معنا</strong></span></h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-whatsapp fa-fw me-2"></i><span style="font-size: 20px;"><a href="https://motqnendecor.odoo.com/#">تواصل معنا</a></span></li><li style="font-size: 20px;"><i class="fa fa-fw me-2 fa-phone"></i><a href="tel:+966 50 173 7672%E2%81%A9" class="o_translate_inline"><span class="o_force_ltr">+966 50 173 7672</span></a></li><li style="font-size: 20px;"><i class="fa fa-envelope fa-fw me-2"></i><a class="o_translate_inline" href="mailto:motqnendecor@gmail.com"><span style="font-size: 20px;">motqnendecor@gmail.com</span></a></li>
-                                <li><i class="fa fa-envelope fa-fw me-2"></i><a class="o_translate_inline" href="mailto:motqnen@gmail.com"><span style="font-size: 20px;">motqnen@gmail.com</span></a></li><li><br></li></ul>
-                            <div class="s_social_media text-start o_not_editable" data-snippet="s_social_media" data-name="Social Media">
-                                <h5 class="s_social_media_title d-none">تابعنا</h5>
-<a href="https://motqnendecor.odoo.com/website/social/facebook" class="s_social_media_facebook" target="_blank" aria-label="فيسبوك">
-                                    <i class="fa fa-facebook rounded-circle shadow-sm o_editable_media"></i>
-                                </a>
-<a href="https://www.snapchat.com/" target="_blank" aria-label="snapchat">
-                                    <i class="fa rounded-circle shadow-sm o_editable_media fa-snapchat"></i>
-                                </a>
-<a href="https://motqnendecor.odoo.com/website/social/instagram" class="s_social_media_instagram" target="_blank" aria-label="Instagram">
-                                    <i class="fa rounded-circle shadow-sm o_editable_media fa-instagram"></i>
-                                </a>
-</div>
-                        </div>
-                        
                     </div>
                 </div>
-            </section>
-        </div>
-                    <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
-                        <div class="container py-3">
-                            <div class="row row-gap-2">
-                                <div class="col-md text-center text-muted d-flex flex-column-reverse gap-2 text-md-start">
-                                    <span class="o_footer_copyright_name me-2 small"><p>Copyright © Motqnen</p></span>
-                                </div>
-                                <div class="col-md text-center o_not_editable small mt-auto mb-0 text-md-end">
-        <div class="o_brand_promotion">
-        مشغل بواسطة 
-            <strong>
-                <a target="_blank" href="http://www.odoo.com/?utm_source=db&amp;utm_medium=website">
-                    أودو
-                </a>
-            </strong>
-        - 
-            إنشاء <a target="_blank" href="http://www.odoo.com/app/website?utm_source=db&amp;utm_medium=website">موقع إلكتروني مجاني</a>
-        
-    </div>
-                                </div>
+
+            </nav>
+        </header>
+        <main class="" style="padding-top: 79.6px;">
+
+            <div id="wrap" class="oe_structure">
+                <section class="header_custome s_striped_center_top o_cc o_cc5 o_colored_level pt32 pb0"
+                    data-oe-shape-data="{&#39;shape&#39;:&#39;html_builder/Connections/20&#39;,&#39;colors&#39;:{&#39;c5&#39;: &#39;o-color-4&#39;},&#39;flip&#39;:[], &#39;showOnMobile&#39;:true}"
+                    data-snippet="s_striped_center_top" data-name="القسم الأوسط العلوي مخطط بخطوط">
+                    <div class="o_we_shape o_html_builder_Connections_20 o_shape_show_mobile"
+                        style="background-image: url(&quot;/html_editor/shape/html_builder/Connections/20.svg?c5=o-color-4&quot;); background-position: 50% 100%;">
+                    </div>
+                    <div class="o_container_small">
+                        <div class="row o_grid_mode" data-row-count="15">
+                            <div class="o_colored_level o_grid_item g-col-lg-8 g-height-5 col-lg-8"
+                                style="grid-area: 1 / 3 / 6 / 11; z-index: 1;">
+                                <h1 style="text-align: center;"><span class="h2-fs">تحويل الرؤية إلى واقع ملموس</span>
+                                </h1>
+                                <p class="lead" style="text-align: center;">نحن نحرص على تقديم حلول سلسة ومبتكرة تلبي
+                                    احتياجاتك وتتجاوز توقعاتك، مما يؤدي إلى تحقيق نتائج مجدية ونجاح دائم.</p>
+                                <p style="text-align: center;">
+                                    <a class="o_translate_inline btn-lg btn btn-primary"
+                                        href="./Contact Us _ motqnendecor.html">تواصل معنا</a>
+                                </p>
+                            </div>
+
+                            <div class="o_colored_level o_grid_item g-col-lg-10 g-height-10 col-lg-10"
+                                style="text-align: center; z-index: 2; grid-area: 6 / 2 / 16 / 12;">
+                                <figure class="figure w-100">
+                                    <img src="./متقنين ديكور _ motqnendecor_files/ChatGPT Image 13 فبراير 2026، 02_15_42 م.webp"
+                                        alt="" data-attachment-id="1074"
+                                        class="figure-img img-fluid rounded img o_we_custom_image"
+                                        style="width: 100% !important;" data-format-mimetype="image/webp"
+                                        data-original-id="1074"
+                                        data-original-src="/web/image/1074-e73b8a7d/ChatGPT%20Image%2013%20%D9%81%D8%A8%D8%B1%D8%A7%D9%8A%D8%B1%202026%D8%8C%2002_15_42%20%D9%85.png"
+                                        data-mimetype-before-conversion="image/png" data-resize-width="690"
+                                        data-mimetype="image/webp" loading="lazy"><br>
+                                </figure>
                             </div>
                         </div>
                     </div>
-                </footer>
+                </section>
+                <section class="custom_title s_title o_colored_level pb0 pt72" data-vcss="001" data-snippet="s_title"
+                    data-name="العنوان">
+                    <div class="container s_allow_columns">
+                        <h2 class="display-3-fs" style="text-align: center;">بعض من اعمالنا</h2>
+                    </div>
+                </section>
+                <section
+                    class="s_image_gallery o_slideshow pt24 pb24 s_image_gallery_controllers_outside s_image_gallery_controllers_outside_arrows_right s_image_gallery_indicators_dots s_image_gallery_arrows_default o_image_popup o_colored_level o_half_screen_height"
+                    data-vcss="002" data-columns="3" data-snippet="s_image_gallery" data-name="معرض الصور"
+                    style="height: 486.5px;">
+                    <div class="overflow-hidden o_container_small">
+                        <div style="margin: 0 12px;" id="slideshow_1770417011750" class="carousel slide carousel-dark"
+                            data-bs-ride="carousel" data-bs-interval="1000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-06 at 7.57.20 PM.jpeg"
+                                        alt="" data-attachment-id="1001"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="1001"
+                                        data-original-src="/web/image/1001-1ed0ffc4/WhatsApp%20Image%202026-02-06%20at%207.57.20%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="0" style=""></div>
+                                <div class="carousel-item undefined active" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.44.56 PM.jpeg"
+                                        alt="" data-attachment-id="1000"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="1000"
+                                        data-original-src="/web/image/1000-0273576b/WhatsApp%20Image%202026-02-03%20at%207.44.56%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="1" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/11.jpeg" alt=""
+                                        data-attachment-id="999"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="999"
+                                        data-original-src="/web/image/999-f706d270/11.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="2" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.53.40 PM.jpeg"
+                                        alt="" data-attachment-id="998"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="998"
+                                        data-original-src="/web/image/998-f4d7f19f/WhatsApp%20Image%202026-02-03%20at%207.53.40%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="3" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/11111.jpeg" alt=""
+                                        data-attachment-id="997"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="997"
+                                        data-original-src="/web/image/997-84c8c711/11111.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="4" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.01.20 PM.jpeg"
+                                        alt="" data-attachment-id="996"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="996"
+                                        data-original-src="/web/image/996-d494d264/WhatsApp%20Image%202026-02-03%20at%208.01.20%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="5" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/500000.jpeg" alt=""
+                                        data-attachment-id="995"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="995"
+                                        data-original-src="/web/image/995-30d3688f/500000.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="6" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.12 PM.jpeg"
+                                        alt="" data-attachment-id="994"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="994"
+                                        data-original-src="/web/image/994-65a3f1d1/WhatsApp%20Image%202026-02-03%20at%207.47.12%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="7" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.00.40 PM.jpeg"
+                                        alt="" data-attachment-id="993"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="993"
+                                        data-original-src="/web/image/993-8f885ddf/WhatsApp%20Image%202026-02-03%20at%208.00.40%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="8" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.20.58 PM.webp"
+                                        alt="" data-attachment-id="983"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="983"
+                                        data-original-src="/web/image/983-00034350/WhatsApp%20Image%202026-02-03%20at%208.20.58%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="870"
+                                        data-mimetype="image/webp" data-index="9" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.11 PM.webp"
+                                        alt="" data-attachment-id="984"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="984"
+                                        data-original-src="/web/image/984-1cb16cb3/WhatsApp%20Image%202026-02-03%20at%207.47.11%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="10" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.42.53 1111.jpeg"
+                                        alt="" data-attachment-id="985"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="985"
+                                        data-original-src="/web/image/985-6b9ff10a/WhatsApp%20Image%202026-02-03%20at%207.42.53%201111.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="11" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/000000.webp" alt=""
+                                        data-attachment-id="986"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="986"
+                                        data-original-src="/web/image/986-01289459/000000.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="12" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.20 PM.jpeg"
+                                        alt="" data-attachment-id="987"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="987"
+                                        data-original-src="/web/image/987-cac75ff9/WhatsApp%20Image%202026-02-02%20at%208.10.20%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="1080"
+                                        data-mimetype="image/webp" data-index="13" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.40.51 PM.jpeg"
+                                        alt="" data-attachment-id="988"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="988"
+                                        data-original-src="/web/image/988-426c1bd9/WhatsApp%20Image%202026-02-03%20at%207.40.51%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="14" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.47.10 PM.webp"
+                                        alt="" data-attachment-id="989"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="989"
+                                        data-original-src="/web/image/989-2e27679e/WhatsApp%20Image%202026-02-03%20at%207.47.10%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="15" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/11111111.jpeg" alt=""
+                                        data-attachment-id="990"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="990"
+                                        data-original-src="/web/image/990-313d02e0/11111111.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="960"
+                                        data-mimetype="image/webp" data-index="16" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.21 PM.jpeg"
+                                        alt="" data-attachment-id="991"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="991"
+                                        data-original-src="/web/image/991-f232f061/WhatsApp%20Image%202026-02-02%20at%208.10.21%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="1080"
+                                        data-mimetype="image/webp" data-index="17" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.17 PM.webp"
+                                        alt="" data-attachment-id="992"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="992"
+                                        data-original-src="/web/image/992-53baaee4/WhatsApp%20Image%202026-02-02%20at%208.10.17%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="18" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 7.42.53 PM.jpeg"
+                                        alt="" data-attachment-id="982"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="982"
+                                        data-original-src="/web/image/982-86d56f68/WhatsApp%20Image%202026-02-03%20at%207.42.53%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="19" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.40 PM.jpeg"
+                                        alt="" data-attachment-id="981"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="981"
+                                        data-original-src="/web/image/981-7acde13d/WhatsApp%20Image%202026-02-03%20at%208.14.40%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="20" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.39 PM.jpeg"
+                                        alt="" data-attachment-id="980"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="980"
+                                        data-original-src="/web/image/980-4275669c/WhatsApp%20Image%202026-02-03%20at%208.14.39%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="396"
+                                        data-mimetype="image/webp" data-index="21" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-02 at 8.10.26 PM.jpeg"
+                                        alt="" data-attachment-id="979"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="979"
+                                        data-original-src="/web/image/979-2e5f30ce/WhatsApp%20Image%202026-02-02%20at%208.10.26%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="22" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.41 PM.jpeg"
+                                        alt="" data-attachment-id="978"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="978"
+                                        data-original-src="/web/image/978-1ed4cbed/WhatsApp%20Image%202026-02-03%20at%208.14.41%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="23" style=""></div>
+                                <div class="carousel-item undefined" style="min-height: 382.5px;"><img
+                                        src="./متقنين ديكور _ motqnendecor_files/WhatsApp Image 2026-02-03 at 8.14.38 PM.jpeg"
+                                        alt="" data-attachment-id="977"
+                                        class="img img-fluid o_we_custom_image d-block mh-100 mw-100 mx-auto rounded object-fit-cover"
+                                        data-format-mimetype="image/webp" data-original-id="977"
+                                        data-original-src="/web/image/977-ef62e55e/WhatsApp%20Image%202026-02-03%20at%208.14.38%20PM.jpeg"
+                                        data-mimetype-before-conversion="image/jpeg" data-resize-width="720"
+                                        data-mimetype="image/webp" data-index="24" style=""></div>
+                            </div>
+                            <div class="o_carousel_controllers"><button
+                                    class="carousel-control-prev o_we_no_overlay o_not_editable" data-bs-slide="prev"
+                                    aria-label="السابق" title="السابق" data-bs-target="#slideshow_1770417011750"><span
+                                        class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                                        class="visually-hidden">السابق</span></button>
+                                <div class="carousel-indicators s_image_gallery_indicators_bars"><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="0" class=""
+                                        style="background-image: url(&quot;/web/image/1032-1ed0ffc4/WhatsApp%20Image%202026-02-06%20at%207.57.20%20PM.jpeg&quot;);"></button><button
+                                        type="button" aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="1"
+                                        style="background-image: url(&quot;/web/image/1025-0273576b/WhatsApp%20Image%202026-02-03%20at%207.44.56%20PM.jpeg&quot;);"
+                                        class="active" aria-current="true"></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="2"
+                                        style="background-image: url(&quot;/web/image/1024-f706d270/11.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="3"
+                                        style="background-image: url(&quot;/web/image/1023-f4d7f19f/WhatsApp%20Image%202026-02-03%20at%207.53.40%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="4"
+                                        style="background-image: url(&quot;/web/image/1022-84c8c711/11111.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="5"
+                                        style="background-image: url(&quot;/web/image/1021-d494d264/WhatsApp%20Image%202026-02-03%20at%208.01.20%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="6"
+                                        style="background-image: url(&quot;/web/image/1020-30d3688f/500000.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="7"
+                                        style="background-image: url(&quot;/web/image/1019-65a3f1d1/WhatsApp%20Image%202026-02-03%20at%207.47.12%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="8"
+                                        style="background-image: url(&quot;/web/image/1018-8f885ddf/WhatsApp%20Image%202026-02-03%20at%208.00.40%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="9"
+                                        style="background-image: url(&quot;/web/image/1008-c69dc8d2/WhatsApp%20Image%202026-02-03%20at%208.20.58%20PM.webp&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="10"
+                                        style="background-image: url(&quot;/web/image/1009-58593778/WhatsApp%20Image%202026-02-03%20at%207.47.11%20PM.webp&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="11"
+                                        style="background-image: url(&quot;/web/image/1010-6b9ff10a/WhatsApp%20Image%202026-02-03%20at%207.42.53%201111.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="12"
+                                        style="background-image: url(&quot;/web/image/1011-78eb35e7/000000.webp&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="13"
+                                        style="background-image: url(&quot;/web/image/1012-cac75ff9/WhatsApp%20Image%202026-02-02%20at%208.10.20%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="14"
+                                        style="background-image: url(&quot;/web/image/1013-426c1bd9/WhatsApp%20Image%202026-02-03%20at%207.40.51%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="15"
+                                        style="background-image: url(&quot;/web/image/1015-fa548a9b/WhatsApp%20Image%202026-02-03%20at%207.47.10%20PM.webp&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="16"
+                                        style="background-image: url(&quot;/web/image/1016-313d02e0/11111111.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="17"
+                                        style="background-image: url(&quot;/web/image/1017-f232f061/WhatsApp%20Image%202026-02-02%20at%208.10.21%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="18"
+                                        style="background-image: url(&quot;/web/image/1014-38af63af/WhatsApp%20Image%202026-02-02%20at%208.10.17%20PM.webp&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="19"
+                                        style="background-image: url(&quot;/web/image/1007-86d56f68/WhatsApp%20Image%202026-02-03%20at%207.42.53%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="20"
+                                        style="background-image: url(&quot;/web/image/1006-7acde13d/WhatsApp%20Image%202026-02-03%20at%208.14.40%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="21"
+                                        style="background-image: url(&quot;/web/image/1005-4275669c/WhatsApp%20Image%202026-02-03%20at%208.14.39%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="22"
+                                        style="background-image: url(&quot;/web/image/1004-2e5f30ce/WhatsApp%20Image%202026-02-02%20at%208.10.26%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="23"
+                                        style="background-image: url(&quot;/web/image/1003-1ed4cbed/WhatsApp%20Image%202026-02-03%20at%208.14.41%20PM.jpeg&quot;);"
+                                        class=""></button><button type="button"
+                                        aria-label="مؤشر منصّة للعرض بعناصر متغيّرة"
+                                        data-bs-target="#slideshow_1770417011750" data-bs-slide-to="24"
+                                        style="background-image: url(&quot;/web/image/1002-ef62e55e/WhatsApp%20Image%202026-02-03%20at%208.14.38%20PM.jpeg&quot;);"
+                                        class=""></button></div><button
+                                    class="carousel-control-next o_we_no_overlay o_not_editable" data-bs-slide="next"
+                                    aria-label="التالي" title="التالي" data-bs-target="#slideshow_1770417011750"><span
+                                        class="carousel-control-next-icon" aria-hidden="true"></span><span
+                                        class="visually-hidden">التالي</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_key_benefits pt48 o_colored_level pb0"
+                    data-oe-shape-data="{&#39;shape&#39;: &#39;html_builder/Connections/14&#39;}"
+                    data-snippet="s_key_benefits" data-name="المزايا الرئيسية">
+                    <div class="o_we_shape o_html_builder_Connections_14" style=""></div>
+                    <div class="container">
+                        <p class="lead">
+                            ✽&nbsp;ما نقدمه
+                        </p>
+                        <h2 class="display-3-fs">اكتشف المزايا الثلاث الرئيسية <br>التي نقدمها</h2>
+                        <div class="row">
+                            <div class="col-lg-4 pt48 pb24 o_colored_level">
+                                <span class="display-3-fs text-o-color-1">1</span>
+                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                    <hr class="w-100 mx-auto">
+                                </div>
+                                <h3 class="h4-fs">أسعار مناسبة</h3>
+                                <p>نحن نقدم أسعاراً صريحة وشفافة توفر لك قيمة كبيرة، مما يضمن لك دائماً الحصول على أفضل
+                                    صفقة دون تكاليف خفية.</p>
+                            </div>
+                            <div class="col-lg-4 pt48 pb24 o_colored_level">
+                                <span class="display-3-fs text-o-color-1">2</span>
+                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                    <hr class="w-100 mx-auto">
+                                </div>
+                                <h3 class="h4-fs">دعم على مدار الساعة</h3>
+                                <p>يتوفر فريق الدعم لدينا على مدار الساعة طوال أيام الأسبوع لمساعدتك في أي استفسارات أو
+                                    مشكلات، مما يضمن حصولك على المساعدة متى احتجت إليها.</p>
+                            </div>
+                            <div class="col-lg-4 pt48 pb24 o_colored_level">
+                                <span class="display-3-fs text-o-color-1">3</span>
+                                <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                    <hr class="w-100 mx-auto">
+                                </div>
+                                <h3 class="h4-fs">سرعه التنفيذ</h3>
+                                <p>لدينا فريق على اعلى مستوى</p>
+                                <p>&nbsp;مما يمكننا من اداء المهام بسرعه عاليه</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s_bento_banner pt32 pb32 o_colored_level" data-snippet="s_bento_banner"
+                    data-name="Bento Banner">
+                    <div class="container">
+                        <section class="cta-card">
+                            <div class="cta-content">
+                                <h2>تواصل معنا للاستفسار عن كل ماتحتاج اليه</h2>
+                                <div style="margin-top: 30px;">
+                                    <a href="./Contact Us _ motqnendecor.html" class="cta-btn">تواصل معنا</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="map-section" id="google-map">
+                    <div class="map-container">
+                        <h2 class="map-title">كل شيء يتعلق بالألوان والديكورات والجبس بورد</h2>
+                        <iframe id="map-iframe"
+                            src="https://www.google.com/maps?q=21.5863422,39.155825&z=17&hl=ar&output=embed"
+                            allowfullscreen="" loading="lazy" aria-label="الخريطة">
+                        </iframe>
+                    </div>
+                </section>
             </div>
-        
-        
-<div class="o-main-components-container"><div class="o-overlay-container"></div><div></div><div class="editor_notification_manager o_notification_manager o_upload_progress_toast"></div><div class="o_notification_manager"></div></div></body></html>
+
+            <div id="o_shared_blocks" class="oe_unremovable"></div>
+        </main>
+        <footer id="bottom" data-anchor="true" data-name="Footer" class="o_footer o_colored_level o_cc ">
+            <div id="footer" class="oe_structure oe_structure_solo border text-break"
+                style="--box-border-left-width: 0px; --box-border-right-width: 0px;">
+                <section class="s_text_block pt40 pb16" data-snippet="s_text_block" data-name="Container">
+                    <div class="container">
+                        <div class="row o_grid_mode" data-row-count="5">
+                            <div class="o_colored_level o_grid_item g-col-lg-2 g-height-5 col-lg-2"
+                                style="grid-area: 1 / 1 / 6 / 3; z-index: 1;">
+                                <h5><span style="font-size: 24px;"><strong>روابط مفيدة</strong></span></h5>
+                                <ul class="list-unstyled">
+                                    <li><span style="font-size: 20px;"><a href="./index.html">الرئيسية</a></span></li>
+                                    <li style="font-size: 20px;"><a href="./Contact Us _ motqnendecor.html">تواصل
+                                            معنا</a></li>
+                                </ul>
+                            </div>
+                            <div class="o_colored_level o_grid_item g-col-lg-5 g-height-5 col-lg-5"
+                                style="grid-area: 1 / 3 / 6 / 8; z-index: 2;">
+                                <h5><span class="h4-fs"><strong>من نحن</strong></span></h5>
+                                <p><span style="font-size: 20px;">نحن فريق من الأفراد المتحمسين، نهدف إلى تحسين تجربة
+                                        العملاء من خلال توفير دهانات عالية الجودة. نحن نقدم مجموعة متنوعة من الألوان
+                                        والأنواع لتلبية احتياجات كل مشروع.&nbsp;</span><br><span
+                                        style="font-size: 20px;">خدماتنا تناسب المنازل و&nbsp;المشاريع التجارية.</span>
+                                </p>
+                            </div>
+                            <div class="o_colored_level o_grid_item g-col-lg-4 col-lg-4 g-height-5"
+                                style="grid-area: 1 / 9 / 6 / 13; z-index: 3;">
+                                <h5><span class="h4-fs"><strong>تواصل معنا</strong></span></h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa fa-whatsapp fa-fw me-2"></i><span style="font-size: 20px;"><a
+                                                href="./Contact Us _ motqnendecor.html">تواصل معنا</a></span></li>
+                                    <li style="font-size: 20px;"><i class="fa fa-fw me-2 fa-phone"></i><a
+                                            href="tel:+966 50 173 7672%E2%81%A9" class="o_translate_inline"><span
+                                                class="o_force_ltr">+966 50 173 7672</span></a></li>
+                                    <li style="font-size: 20px;"><i class="fa fa-envelope fa-fw me-2"></i><a
+                                            class="o_translate_inline" href="mailto:motqnendecor@gmail.com"><span
+                                                style="font-size: 20px;">motqnendecor@gmail.com</span></a></li>
+                                    <li><i class="fa fa-envelope fa-fw me-2"></i><a class="o_translate_inline"
+                                            href="mailto:motqnen@gmail.com"><span
+                                                style="font-size: 20px;">motqnen@gmail.com</span></a></li>
+                                    <li><br></li>
+                                </ul>
+                                <div class="s_social_media text-start o_not_editable" data-snippet="s_social_media"
+                                    data-name="Social Media">
+                                    <h5 class="s_social_media_title d-none">تابعنا</h5>
+                                    <a href="#" class="custom-social-icon" target="_blank" aria-label="فيسبوك">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="https://www.snapchat.com/" class="custom-social-icon" target="_blank"
+                                        aria-label="snapchat">
+                                        <i class="fa fa-snapchat"></i>
+                                    </a>
+                                    <a href="#" class="custom-social-icon" target="_blank" aria-label="Instagram">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="o_footer_copyright o_colored_level o_cc" data-name="Copyright">
+                <div class="container py-3">
+                    <div class="row row-gap-2">
+                        <div class="col-md text-center text-muted d-flex flex-column-reverse gap-2 text-md-start">
+                            <span class="o_footer_copyright_name me-2 small">
+                                <p>Copyright © Motqnen <span id="current-year"></span></p>
+                            </span>
+                        </div>
+                        <div class="col-md text-center o_not_editable small mt-auto mb-0 text-md-end">
+                            <div class="o_brand_promotion">
+                                حقوق النشر © متقنين ديكور <span id="current-year-ar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="o-main-components-container">
+        <div class="o-overlay-container"></div>
+        <div></div>
+        <div class="editor_notification_manager o_notification_manager o_upload_progress_toast"></div>
+        <div class="o_notification_manager"></div>
+    </div>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('current-year-ar').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
